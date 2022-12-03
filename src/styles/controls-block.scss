@@ -1,0 +1,53 @@
+@import "variables";
+@import "mixins";
+
+.controls-wrapper {
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  align-self: flex-start;
+}
+
+.choose-car-name,
+.update-car-name {
+  line-height: 1.4;
+  border-radius: 5px;
+
+  &:focus,
+  &:active {
+    outline: none;
+  }
+}
+
+.choose-car-color,
+.update-car-color {
+  cursor: pointer;
+}
+
+.create-car,
+.update-car {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.add-car-error,
+.add-update-error {
+  @include modal;
+  background: $modal-bg;
+  color: #f8678e;
+  border-radius: 10px;
+  padding: 5px;
+  text-align: center;
+}
+
+.add-car-error {
+  top: -32px;
+  right: -130px;
+}
+
+.add-update-error {
+  top: 40px;
+  right: -130px;
+}

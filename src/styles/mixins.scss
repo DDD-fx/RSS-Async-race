@@ -1,0 +1,33 @@
+@import './variables';
+
+@mixin buttons {
+  padding: 8px;
+  background: $btn-main-color;
+  font-size: 14px;
+  color: $btn-text-color;
+  border: none;
+  border-radius: 10px;
+  transition: all .3s;
+
+  &:hover {
+    cursor: pointer;
+    box-shadow: $box-shadow;
+  }
+
+  &[disabled] {
+    background: #919191;
+  }
+
+  &[disabled]:hover {
+    cursor: default;
+    box-shadow: none;
+  }
+}
+
+@mixin modal {
+  position: absolute;
+  font-family: 'Courier Prime', monospace;
+  font-size: 14px;
+  overflow-wrap: break-word;
+  text-align: center;
+}

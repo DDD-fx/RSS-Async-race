@@ -1,0 +1,100 @@
+@import "variables";
+@import "mixins";
+
+.winners {
+  display: flex;
+  flex-direction: column;
+  min-height: 682px;
+  gap: 30px;
+}
+
+.winners-content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+}
+
+.winners-table {
+  border-collapse: collapse;
+  text-align: center;
+}
+
+.winners-table-th {
+  border: 1px solid black;
+  background: $btn-main-color;
+
+  &:nth-child(1) {
+    padding: 0 10px;
+  }
+
+  &:nth-child(2) {
+    padding: 0 50px;
+
+  }
+
+  &:nth-child(3) {
+    padding: 0 80px;
+  }
+
+  &:nth-child(4) {
+    position: relative;
+
+  }
+
+  &:nth-child(5) {
+    position: relative;
+  }
+
+  @media (max-width: 615px) {
+    &~& {
+      padding: 0 5px;
+    }
+
+    &:nth-child(2) {
+      padding: 0 35px;
+    }
+  }
+}
+
+.wins-sorter-btn,
+.time-sorter-btn {
+  padding: 5px 30px;
+  background: none;
+  cursor: pointer;
+  border: none;
+  color: $text-main-color;
+  font-weight: bold;
+}
+
+.wins-sort-arrow,
+.time-sort-arrow {
+  position: absolute;
+  top: -3px;
+  right: 5px;
+  font-size: 25px;
+}
+
+.winners-row {
+  height: 50px;
+
+  & td {
+    border-bottom: 1px solid black;
+  }
+
+  & td:nth-child(3) {
+    color: $orange-color;
+  }
+}
+
+.winners-pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: auto;
+}
+
+@media (max-width: 615px) {
+  td .car {
+    height: 20px;
+  }
+}
