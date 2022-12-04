@@ -1,7 +1,7 @@
 import { DriveErrorsType } from './types/types';
 
 export const MAX_CAR_PER_PAGE = 7;
-export const MAX_GENERATED_CARS = 10;
+export const MAX_GENERATED_CARS = 2;
 export const BODY_COLOR = '#69696b';
 export const STARTING_PAGE = 1;
 export const MAX_WINNERS_PER_PAGE = 10;

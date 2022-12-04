@@ -4,6 +4,4 @@ Mini racing game with user-friendly info pop-ups.
 
 Backend: NodeJS (```JSON server```).
 
-Deploy: 
-
-
+Deploy: https://rss-async-race.onrender.com/
