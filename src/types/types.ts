@@ -162,9 +162,9 @@ export type SortArgsType = {
 };
 
 export enum RequestURL {
-  garage = 'https://bright-onesies-slug.cyclic.app/garage/',
-  engine = 'https://bright-onesies-slug.cyclic.app/engine',
-  winners = 'https://bright-onesies-slug.cyclic.app/winners/',
+  garage = 'https://rs-async-race-api.onrender.com/garage/',
+  engine = 'https://rs-async-race-api.onrender.com/engine',
+  winners = 'https://rs-async-race-api.onrender.com/winners/',
 }
 
 export type WinnersQueryType = Pick<WinnersStateType, 'winnersPage' | 'sortBy' | 'sortOrder'>;
