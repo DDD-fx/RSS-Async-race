@@ -161,11 +161,13 @@ export type SortArgsType = {
   order: 'asc' | 'desc',
 };
 
-export enum RequestURL {
-  garage = 'https://rs-async-race-api.onrender.com/garage/',
-  engine = 'https://rs-async-race-api.onrender.com/engine',
-  winners = 'https://rs-async-race-api.onrender.com/winners/',
-}
+const API_BASE = '/api/async-race/';
+
+export const RequestURL = {
+  garage: `${API_BASE}garage/`,
+  engine: `${API_BASE}engine`,
+  winners: `${API_BASE}winners/`,
+};
 
 export type WinnersQueryType = Pick<WinnersStateType, 'winnersPage' | 'sortBy' | 'sortOrder'>;
 

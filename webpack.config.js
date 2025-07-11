@@ -36,6 +36,7 @@ const baseConfig = {
     filename: 'index.js',
     path: path.resolve(__dirname, './dist'),
     assetModuleFilename: 'img/[name][ext]',
+    publicPath: '/projects/async-race/',
   },
   plugins: [
     new HtmlWebpackPlugin({
